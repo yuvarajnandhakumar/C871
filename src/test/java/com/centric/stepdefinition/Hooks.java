@@ -36,8 +36,8 @@ public class Hooks extends Commonactions {
 			Thread.sleep(5000);
 			//------------------------------Test------------------------------------\\
 			
-			 	   ca.launch(System.getProperty("url"));
-	        // ca.launch("http://win16sql19-ccd.centricsoftware.com//WebAccess/login.html");
+		//	 	   ca.launch(System.getProperty("url"));
+	         ca.launch("http://win16sql19-plmc.centricsoftware.com//WebAccess/login.html");
 			
 		   //-------------------------------Test-------------------------------------\\  
 		LoginPage lp = new LoginPage();

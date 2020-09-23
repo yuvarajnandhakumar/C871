@@ -54,8 +54,8 @@ public class LoginPageSteps extends Commonactions {
 	public void user_launches_centric_application() throws InterruptedException {
 		//------------------------------Test------------------------------------\\
 		
-		 	   ca.launch(System.getProperty("url"));
-	     //    ca.launch("http://win16sql19-ccd.centricsoftware.com//WebAccess/login.html");
+		// 	   ca.launch(System.getProperty("url"));
+	         ca.launch("http://win16sql19-plmc.centricsoftware.com//WebAccess/login.html");
 		
 	   //-------------------------------Test-------------------------------------\\      
 	         
