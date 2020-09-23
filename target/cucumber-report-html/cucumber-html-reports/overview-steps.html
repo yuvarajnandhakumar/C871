@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 7.1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Centric-8</td>
+              <td>7.1</td>
+            <td>08 Apr 2020, 10:48</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">HomePageSteps.user_click_on_setup_icon_and_announcement_under_user_management()</td>
+              <td>1</td>
+              <td class="duration" data-value="55407374300">55.407</td>
+              <td class="duration" data-value="55407374300">55.407</td>
+              <td class="duration" data-value="55407374300">55.407</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageSteps.user_click_on_setup_icon_and_roles_under_user_management()</td>
+              <td>1</td>
+              <td class="duration" data-value="16382828900">16.382</td>
+              <td class="duration" data-value="16382828900">16.382</td>
+              <td class="duration" data-value="16382828900">16.382</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.after(Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="652216400">0.652</td>
+              <td class="duration" data-value="652216400">0.702</td>
+              <td class="duration" data-value="1304432800">1.304</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.before()</td>
+              <td>2</td>
+              <td class="duration" data-value="22784535800">22.784</td>
+              <td class="duration" data-value="22784535800">30.400</td>
+              <td class="duration" data-value="45569071600">45.569</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageSteps.reportpreparation()</td>
+              <td>2</td>
+              <td class="duration" data-value="157358700">0.157</td>
+              <td class="duration" data-value="157358700">0.301</td>
+              <td class="duration" data-value="314717400">0.314</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginPageSteps.user_launches_centric_application()</td>
+              <td>2</td>
+              <td class="duration" data-value="379700100">0.379</td>
+              <td class="duration" data-value="379700100">0.515</td>
+              <td class="duration" data-value="759400200">0.759</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_apply_the_filter_conditions_as(String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15600">0.000</td>
+              <td class="duration" data-value="15600">0.000</td>
+              <td class="duration" data-value="15600">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_click_on_custom_view_and_copy_the_default_custom_view_and_name_the_custom_view_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="23200">0.000</td>
+              <td class="duration" data-value="23200">0.000</td>
+              <td class="duration" data-value="23200">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_creates_new_admin_role(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="8842533400">8.842</td>
+              <td class="duration" data-value="8842533400">8.842</td>
+              <td class="duration" data-value="8842533400">8.842</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_creates_new_announcement_and_edit_message(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13000">0.000</td>
+              <td class="duration" data-value="13000">0.000</td>
+              <td class="duration" data-value="13000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_effective_to_and_companies()</td>
+              <td>1</td>
+              <td class="duration" data-value="12700">0.000</td>
+              <td class="duration" data-value="12700">0.000</td>
+              <td class="duration" data-value="12700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_select_all_results_and_click_on_save_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="10400">0.000</td>
+              <td class="duration" data-value="10400">0.000</td>
+              <td class="duration" data-value="10400">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_select_security_roles_in_the_action_coloumn()</td>
+              <td>1</td>
+              <td class="duration" data-value="3219585200">3.219</td>
+              <td class="duration" data-value="3219585200">3.219</td>
+              <td class="duration" data-value="3219585200">3.219</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_set_results_display_size_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12900">0.000</td>
+              <td class="duration" data-value="12900">0.000</td>
+              <td class="duration" data-value="12900">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_validating_the_announcement_is_displaying_in_home_page_or_not()</td>
+              <td>1</td>
+              <td class="duration" data-value="8000">0.000</td>
+              <td class="duration" data-value="8000">0.000</td>
+              <td class="duration" data-value="8000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UsrMgmntPageSteps.user_verify_the_displaying_results_size_are_more_than(Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="10500">0.000</td>
+              <td class="duration" data-value="10500">0.000</td>
+              <td class="duration" data-value="10500">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>16</td>
+            <td>20</td>
+            <td class="duration">6.590</td>
+            <td class="duration">55.407</td>
+            <td class="duration">2:11.800</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

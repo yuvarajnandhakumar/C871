@@ -1,0 +1,16 @@
+com\centric\stepdefinition\Hooks.class
+com\centric\objectrepository\ConfigurationPage.class
+com\centric\objectrepository\PopupPage.class
+com\centric\stepdefinition\StylePageSteps.class
+com\centric\stepdefinition\LoginPageSteps.class
+com\centric\stepdefinition\ConfigurationPageSteps.class
+com\centric\stepdefinition\MaterialSpecificationPageSteps.class
+com\centric\stepdefinition\TestRunner.class
+com\centric\objectrepository\LoginPage.class
+com\centric\stepdefinition\HomePageSteps.class
+com\centric\objectrepository\StylePage.class
+com\centric\objectrepository\UserManagementPage.class
+com\centric\stepdefinition\UsrMgmntPageSteps.class
+com\centric\objectrepository\MaterialSpecificationPage.class
+com\centric\resources\Commonactions.class
+com\centric\objectrepository\HomePage.class
