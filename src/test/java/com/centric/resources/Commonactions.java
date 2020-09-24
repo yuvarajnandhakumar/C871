@@ -120,7 +120,7 @@ public class Commonactions{
 	
 	public void eleToBeClickable() throws Throwable {
 		
-		Thread.sleep(6000);
+		Thread.sleep(3000);
 
 	}
 	
