@@ -37,7 +37,7 @@ public class Hooks extends Commonactions {
 			//------------------------------Test------------------------------------\\
 			
 		//	 	   ca.launch(System.getProperty("url"));
-	         ca.launch("http://win16-ora18c.centricsoftware.com//WebAccess/login.html");
+	         ca.launch("http://win16-ora12c.centricsoftware.com//WebAccess/login.html");
 			
 		   //-------------------------------Test-------------------------------------\\  
 		LoginPage lp = new LoginPage();
